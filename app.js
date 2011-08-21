@@ -3,9 +3,9 @@
  * Module dependencies.
  */
 
-var express = require('express');
-
-var app = module.exports = express.createServer();
+var express = require('express'),
+    app     = module.exports = express.createServer(),
+    mail    = require('mailchimp');
 
 // Configuration
 
@@ -25,7 +25,7 @@ app.configure(function(){
 
 app.get('/', function(req, res){
   res.render('index', {
-    title: 'Express'
+    title: 'Node Weekly - Node.js News'
   });
 });
 
