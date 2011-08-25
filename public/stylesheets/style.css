@@ -1,8 +1,67 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #4d4f4f;
 }
 
 a {
-  color: #00B7FF;
+  color: green;
+  text-decoration: none;
+}
+
+#title {
+  font-size: 3em;
+}
+
+#subtitle {
+  font-size: 2em;
+}
+
+#subtitle img {
+  margin-top: -10px;
+  vertical-align: middle;
+}
+
+#claimer, #thanks {
+  font-size: 1.8em;
+}
+
+#state {
+  font-size: 1.3em;
+}
+
+input {
+  font-size: 1.5em;
+  margin: 0;
+  height: 45px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+input[type="text"] {
+  border: 2px solid #ddd;
+  border-right: 0;
+  width: 330px;
+  outline: 0;
+  padding: 0 15px;
+}
+
+input[type="text"]:focus, input[type="text"]:hover {
+  border: 2px solid green;
+  border-right: 0;
+}
+
+input[type="submit"] {
+  background: green;
+  color: #fff;
+  border: 0;
+  height: 49px;
+  position: relative;
+  padding: 0 20px;
+  left: -10px;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background: darkgreen;
 }

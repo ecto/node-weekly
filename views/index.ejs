@@ -1,5 +1,36 @@
-<h1>Node Weekly</h1>
-<p>Node.js news straign to your inbox</p>
-<p>Fancy picture</p>
-<p>No spam, just the latest node.js news<br />
-in your inbox once a week.</p>
+<h1 id="title">
+  <img src="/images/logo.png" alt="Node Weekly" />
+</h1>
+<p id="subtitle">
+  <img src="/images/nodejs.png" alt="node.js" height="30" /> news straight to your inbox
+</p>
+<!--
+<p>
+  <img src="/images/email.jpg" />
+</p>
+-->
+<% if (state != 'false' && state != true) { %>
+<p id="state">
+  <%- state %>
+</p>
+<% } %>
+<% if (state == true) { %>
+<p id="thanks">
+  Thank you for signing up!
+</p>
+<% } %>
+<form action="/" name="subscribe" method="post">
+  <input type="text" name="email" id="email" />
+  <input type="submit" value="Sign up!" />
+</form>
+<p id="claimer">
+  No spam, just the latest node.js news<br />
+  in your inbox once a week.
+</p>
+<p id="footer">
+  From the <a href="#">desk</a> of <a href="http://twitter.com/campedersen">Cam Pedersen</a>.
+</p>
+
+<script>
+document.subscribe.email.focus();
+</script>
